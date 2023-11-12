@@ -1,0 +1,137 @@
+    /*general rules*/
+
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: content-box;
+    user-select: none;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+    height: 2000px;
+}
+    
+     /*title*/
+    
+#page-title{
+    text-align: center;
+    margin: 20px;
+}
+
+#subtitle {
+    margin: 10px;
+    color: rgb(97, 97, 97);
+}
+    
+    /*main*/
+
+.explanation {
+    width: 60%;
+    text-align: center;
+    margin: 15px auto;
+    font-weight: 400; 
+}
+
+.explanation * {
+    padding: 5px;
+}
+
+#hero-names {
+    font-weight: bold;
+}
+
+.instructions {
+    color: gray;
+    font-size: smaller;
+}
+
+    /* heroes */
+
+#heroes-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero-box {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 80%;
+    margin: 10px;
+    text-align: center;
+    align-items: center;
+    border-radius: 50px/40px;
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+}
+
+#heroes-section img {
+    width: 40%;
+    border-radius: 50px/40px;
+    margin: 15px;
+}
+
+   /*on :hover do visibliltà al testo e opacità all'imagine*/
+
+#number:hover {
+    background-color: rgba(216, 255, 216, 0.801);
+    box-shadow: 0px 0px 15px rgb(67, 248, 67);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#string:hover {
+    background-color: rgba(193, 247, 255, 0.801);
+    box-shadow: 0px 0px 15px rgba(12, 221, 253, 0.801);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#boolean:hover {
+    background-color: rgba(232, 205, 248, 0.801);
+    box-shadow: 0px 0px 15px rgba(167, 14, 255, 0.801);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#null:hover {
+    background-color: rgba(135, 145, 255, 0.801);
+    box-shadow: 0px 0px 15px rgba(0, 21, 247, 0.918);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#undefined:hover {
+    background-color: rgba(0, 0, 0, 0.397);
+    box-shadow: 0px 0px 15px rgb(0, 0, 0);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+   
+    /*on not:(over) transiziono sulle opacità precendenti*/
+   
+#number:not(hover) {
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#string:not(hover) {
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#boolean:not(hover) {
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#null:not(hover) {
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
+
+#undefined:not(hover) {
+    background-color: rgba(255, 255, 255, 0.801);
+    box-shadow: 0px 0px 15px rgb(206, 206, 206);
+    transition: background-color 0.5s, box-shadow 0.5s;
+}
