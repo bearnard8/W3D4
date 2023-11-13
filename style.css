@@ -4,12 +4,11 @@
     padding: 0px;
     margin: 0px;
     box-sizing: content-box;
-    user-select: none;
+    /* user-select: none; */
 }
 
 body {
     font-family: 'Lato', sans-serif;
-    height: 2000px;
 }
     
      /*title*/
@@ -62,12 +61,18 @@ body {
     margin: 10px;
     text-align: center;
     align-items: center;
+    justify-content: space-evenly;
     border-radius: 50px/40px;
     box-shadow: 0px 0px 15px rgb(206, 206, 206);
 }
 
+.hero-info {
+    text-align: center;
+    width: 60%;
+}
+
 #heroes-section img {
-    width: 40%;
+    width: 25%;
     border-radius: 50px/40px;
     margin: 15px;
 }
