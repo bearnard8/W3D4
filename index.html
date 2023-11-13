@@ -25,11 +25,8 @@
             Prova a immaginare i tipi di dati come 5 supereroi diversi, ognuno con i suoi poteri.
         </p>
         <p id="hero-names">
-            Numb#r, "String", BOOLean, NuuL, unDefIn3d.
+            Numb3r, "String", BOOLean, NuuL, unDefIn3d.
         </p>
-        <!-- <p>
-            Una volta elencate le cose da fare le esegui una per una, fino a che la casa non è pulita.
-        </p> -->
         <p class="instructions">
             Prova a scorrere sulle immagini per scoprire quali sono i superpoteri di questi eroi.
         </p>
@@ -39,10 +36,17 @@
             <img src="assets/number.jpg" alt="">
             <div class="hero-info">
                 <h2 class="hero-name">
-                    Numb#r
+                    Numb3r
                 </h2>
                 <div class="hero-description">
                     Lei é il supereroe dei numeri, grazie ai suoi poteri puó fare calcoli velocissimi e ricordarsi un sacco di numeri, anche lunghissimi!
+                </div>
+                <div>
+                    Prova a schiacciare qui sotto per far fare a Numb3r una somma!
+                </div>
+                <button id="sum-btn" onclick="sumFunction()">Fai una somma!</button>
+                <div>
+                    Puoi provare a scrivere sia numeri interi che con decimali, vedrai che funziona. E anche con i numeri negativi! Occhio peró ad assegnare lettere o altri simboli.
                 </div>
             </div>
         </div>
@@ -55,6 +59,13 @@
                 <div class="hero-description">
                     É un supereroe molto prolisso, il suo superpotere é confondere tutti con le sue parole e i suoi discorsi, le sa tutte anche perché puó contenere qualsiasi tipo di carattere o cifra
                 </div>
+                <div>
+                    Prova a schiacciare qui sotto per far comporre a "String" una frase con le tue parole!
+                </div>
+                <button id="phrase-btn" onclick="myPhrase()">Crea una Frase!</button>
+                <div>
+                    Vedrai che in queste frasi potrai mettere qualsiasi tipo di carattere: numeri, lettere o simboli. Occhio peró, se metti due numeri non pensare di vedere una somma come prima...
+                </div>
             </div>
         </div>
         <div class="hero-box" id="boolean">
@@ -64,8 +75,15 @@
                     BOOLean
                 </h2>
                 <div class="hero-description">
-                    lui é il supereroe della veritá, per lui il mondo é solo bianco e nero e esiste solo ció che é VERO e ció che é FALSO
+                    É il supereroe della veritá, per lui il mondo é solo bianco e nero e esiste solo ció che é VERO e ció che é FALSO, basta fare la domanda giusta.
                 </div>
+                <div>
+                    Pssst... BOOLean é bravissimo a capire se hai scritto due volte la stessa cosa, per esempio quando devi creare una nuova password, e spesso i siti di chiedono di confermarla!
+                </div>
+                <div>
+                    Mettilo alla prova, sappi che ti risponderá "true" se sono uguali e "false" se non lo sono.
+                </div>
+                <button id="boolean-btn" onclick="checkFunction()">Sono uguali?</button>
             </div>
         </div>
         <div class="hero-box" id="null">
@@ -76,6 +94,16 @@
                 </h2>
                 <div class="hero-description">
                     Null ha il superpotere di svuotare immediatamente delle grandi stanze o spazi, ma anche di svuotare la sua mente e concentrarsi totalmente sul nemico.
+                </div>
+                <div>
+                    Prova a schiacciare qui sotto per permettere a NulL di svuotare una variabile!
+                </div>
+                <button id="null-btn" onclick="makeNull()">Svuota la variabile</button>
+                <div>
+                    Se ti ha detto che il valore é null allora vuol dire che ha funzionato!
+                </div>
+                <div>
+                    ATTENZIONE! Ovviamente se non scrivi niente la variabile resta null fin dal principio!
                 </div>
             </div>
         </div>
@@ -88,8 +116,33 @@
                 <div class="hero-description">
                     Lei é la cattiva tra questi eroi, o quantomento le piace sfruttare le nostre distrazioni per fare dispetti. É il caos in persona e non fa altro che creare scompiglio!
                 </div>
+                <div>
+                    Qualsiasi cosa tu provi a dirle lei risponderá sempre quello che vorrá...
+                </div>
+                <button id="undefined-btn" onclick="undefinedFunction()">Vuoi il Caos?</button>
+                <div>
+                    <!-- Puoi provare a scrivere sia numeri interi che con decimali, vedrai che funziona. E anche con i numeri negativi! Occhio peró ad assegnare lettere o altri simboli. -->
+                </div>
+            </div>
+        </div>
+        <div>
+            Ma fortunatamente i nostri eroi hanno qualcuno che puó aiutarli, qualcuno che li conosce tutti molto bene e che in qualche modo puó contenere i loro poteri: Dr. Object
+        </div>
+        <div class="hero-box" id="drobject">
+            <img src="assets/drobject.jpg" alt="">
+            <div class="hero-info">
+                <h2 class="hero-name">
+                    Dr. Object
+                </h2>
+                <div class="hero-description">
+                    Dr. Object conosce bene tutti i tipi di dati e aiuta gli eroi a coordinarsi e a lavorare meglio.
+                </div>
+                <div>
+                    Prova a dare le tue informazioni al Dr Object per scoprire di cosa é capace!
+                </div>
+                <button id="object-btn" onclick="myObject()">Clicca qui!</button>
             </div>
         </div>
     </div>
-    </body>
+</body>
 </html>
